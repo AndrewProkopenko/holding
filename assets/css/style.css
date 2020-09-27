@@ -234,6 +234,7 @@ header.sticky {
       font-size: 12px;
       line-height: 14px;
       white-space: nowrap;
+      margin-top: 5px;
       margin-bottom: 0; }
   .ac-header_collapse {
     display: -webkit-box;
@@ -270,13 +271,17 @@ header.sticky {
             -ms-flex-align: center;
                 align-items: center;
         height: 50px;
-        padding: 0 25px;
+        padding: 0 15px;
         border-radius: 4px;
-        background-image: -webkit-gradient(linear, left top, right top, from(#fafbfb), to(#f8f9f8));
-        background-image: -o-linear-gradient(left, #fafbfb 0%, #f8f9f8 100%);
-        background-image: linear-gradient(90deg, #fafbfb 0%, #f8f9f8 100%);
-        font-size: 14px;
-        font-family: "Open Sans-700"; }
+        background-image: -webkit-gradient(linear, left top, right top, from(#3b3a3f), to(#242328)) !important;
+        background-image: -o-linear-gradient(left, #3b3a3f 0%, #242328 100%) !important;
+        background-image: linear-gradient(90deg, #3b3a3f 0%, #242328 100%) !important;
+        color: #fff;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        font-family: "Open Sans";
+        cursor: pointer; }
         .ac-header_collapse__tabs .item:first-child {
           margin-right: 15px; }
         .ac-header_collapse__tabs .item::after {
@@ -304,12 +309,13 @@ header.sticky {
                   transform: rotate(45deg);
           background: #2c6cc2; }
       .ac-header_collapse__tabs .item.active {
-        color: #fff;
-        font-size: 16px;
-        font-family: "Open Sans";
-        background-image: -webkit-gradient(linear, left top, right top, from(#3b3a3f), to(#242328)) !important;
-        background-image: -o-linear-gradient(left, #3b3a3f 0%, #242328 100%) !important;
-        background-image: linear-gradient(90deg, #3b3a3f 0%, #242328 100%) !important; }
+        color: #000;
+        font-size: 14px;
+        font-family: "Open Sans-700";
+        background-image: -webkit-gradient(linear, left top, right top, from(#fafbfb), to(#f8f9f8)) !important;
+        background-image: -o-linear-gradient(left, #fafbfb 0%, #f8f9f8 100%) !important;
+        background-image: linear-gradient(90deg, #fafbfb 0%, #f8f9f8 100%) !important;
+        cursor: default; }
     .ac-header_collapse__phone {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1436,6 +1442,8 @@ header.sticky {
       text-align: center; }
     .screen-two_section-1 .item p {
       max-width: 450px; }
+    .screen-two_section-2__content {
+      margin-left: 0; }
   .screen-four_content {
     padding-top: 0; }
     .screen-four_content h5, .screen-four_content p {
@@ -1646,6 +1654,7 @@ header.sticky {
         text-align: center; }
   .last-screen-footer {
     padding-top: 25px;
+    padding-bottom: 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1792,8 +1801,8 @@ header.sticky {
       .screen-two_section-1 .item p {
         max-width: none;
         text-align: center;
-        font-size: 13px;
-        line-height: 14px; }
+        font-size: 14px;
+        line-height: 16px; }
     .screen-two_section-2 {
       padding-top: 10px; }
       .screen-two_section-2__content .item {
@@ -1894,6 +1903,15 @@ header.sticky {
       text-align: center; } }
 
 @media screen and (max-width: 400px) {
+  .ac-header_logo__image {
+    width: 45px; }
+  .ac-header_logo__text {
+    margin: 0; }
+  .bt-main_content h1 {
+    font-size: 23px;
+    line-height: 23px; } }
+
+@media screen and (max-width: 365px) {
   .ac-header_logo__image {
     width: 45px; }
   .ac-header_logo__text {
