@@ -191,7 +191,7 @@ header.sticky {
           -ms-flex-align: center;
               align-items: center;
       width: 100%; }
-      header.sticky .ac-header_collapse__tabs .item {
+      header.sticky .ac-header_collapse__tabs .item.active {
         background: #eaeaea; }
 
 .ac-header {
@@ -273,9 +273,9 @@ header.sticky {
         height: 50px;
         padding: 0 15px;
         border-radius: 4px;
-        background-image: -webkit-gradient(linear, left top, right top, from(#3b3a3f), to(#242328)) !important;
-        background-image: -o-linear-gradient(left, #3b3a3f 0%, #242328 100%) !important;
-        background-image: linear-gradient(90deg, #3b3a3f 0%, #242328 100%) !important;
+        background-image: -webkit-gradient(linear, left top, right top, from(#3b3a3f), to(#242328));
+        background-image: -o-linear-gradient(left, #3b3a3f 0%, #242328 100%);
+        background-image: linear-gradient(90deg, #3b3a3f 0%, #242328 100%);
         color: #fff;
         font-size: 16px;
         line-height: 18px;
@@ -312,9 +312,9 @@ header.sticky {
         color: #000;
         font-size: 14px;
         font-family: "Open Sans-700";
-        background-image: -webkit-gradient(linear, left top, right top, from(#fafbfb), to(#f8f9f8)) !important;
-        background-image: -o-linear-gradient(left, #fafbfb 0%, #f8f9f8 100%) !important;
-        background-image: linear-gradient(90deg, #fafbfb 0%, #f8f9f8 100%) !important;
+        background-image: -webkit-gradient(linear, left top, right top, from(#fafbfb), to(#f8f9f8));
+        background-image: -o-linear-gradient(left, #fafbfb 0%, #f8f9f8 100%);
+        background-image: linear-gradient(90deg, #fafbfb 0%, #f8f9f8 100%);
         cursor: default; }
     .ac-header_collapse__phone {
       display: -webkit-box;
@@ -1921,6 +1921,16 @@ header.sticky {
   .bt-main_content h1 {
     font-size: 23px;
     line-height: 23px; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .screen-two_section-2__content .item i::after {
+    content: '✓';
+    color: #fff;
+    margin-top: -3px; }
+  .last-screen-form_content .bt-main_content__btn {
+    min-width: 200px; }
+  .service-modal-container__item h6, .service-modal-container__item > span {
+    max-width: 320px; } }
 
 @media screen and (min-width: 1200px) {
   .bt-main-second_content__items .item:nth-child(1) {
