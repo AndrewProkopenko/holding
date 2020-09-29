@@ -7,7 +7,7 @@ html, body {
 
 .heading h3 {
   font-size: 38px;
-  font-weight: 800;
+  font-family: "Geometria-800";
   line-height: 48px;
   margin-bottom: 0;
   color: #000d2b;
@@ -17,7 +17,7 @@ html, body {
 
 .heading h5 {
   font-size: 28px;
-  font-weight: 800;
+  font-family: "Geometria-800";
   line-height: 32px;
   margin-bottom: 0;
   color: #000; }
@@ -224,8 +224,7 @@ header.sticky {
         height: 100%; }
     .ac-header_logo__text h2 {
       color: #000e1f;
-      font-family: 'Open Sans';
-      font-weight: 700;
+      font-family: "Open Sans-700";
       font-size: 25px;
       line-height: 25px;
       margin: 0;
@@ -279,11 +278,22 @@ header.sticky {
         background-image: linear-gradient(90deg, #fafbfb 0%, #f8f9f8 100%);
         color: #000;
         font-size: 14px;
-        font-weight: 700;
-        font-family: 'Open Sans';
+        font-family: "Open Sans-700";
         text-align: center;
         line-height: 18px;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-transition: 300ms ease;
+        -o-transition: 300ms ease;
+        transition: 300ms ease; }
+        .ac-header_collapse__tabs .item:hover {
+          -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
+                  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4); }
+          .ac-header_collapse__tabs .item:hover:after {
+            width: 3px;
+            left: -3px; }
+          .ac-header_collapse__tabs .item:hover::before {
+            left: -2px;
+            opacity: 0; }
         .ac-header_collapse__tabs .item:first-child {
           margin-right: 15px; }
         .ac-header_collapse__tabs .item::after {
@@ -296,7 +306,10 @@ header.sticky {
           width: 5px;
           height: 35px;
           background: #63a4f9;
-          border-radius: 4px 0 0 4px; }
+          border-radius: 4px 0 0 4px;
+          -webkit-transition: 200ms ease;
+          -o-transition: 200ms ease;
+          transition: 200ms ease; }
         .ac-header_collapse__tabs .item::before {
           content: '';
           position: absolute;
@@ -309,15 +322,27 @@ header.sticky {
           -webkit-transform: rotate(45deg);
               -ms-transform: rotate(45deg);
                   transform: rotate(45deg);
-          background: #2c6cc2; }
+          background: #2c6cc2;
+          -webkit-transition: 200ms ease;
+          -o-transition: 200ms ease;
+          transition: 200ms ease; }
       .ac-header_collapse__tabs .item.active {
         color: #fff;
         font-size: 16px;
-        font-family: 'Open Sans';
+        font-family: "Open Sans";
         background-image: -webkit-gradient(linear, left top, right top, from(#3b3a3f), to(#242328)) !important;
         background-image: -o-linear-gradient(left, #3b3a3f 0%, #242328 100%) !important;
         background-image: linear-gradient(90deg, #3b3a3f 0%, #242328 100%) !important;
         cursor: default; }
+        .ac-header_collapse__tabs .item.active:hover {
+          -webkit-box-shadow: none;
+                  box-shadow: none; }
+          .ac-header_collapse__tabs .item.active:hover:after {
+            left: -5px;
+            width: 5px; }
+          .ac-header_collapse__tabs .item.active:hover::before {
+            left: -4px;
+            opacity: 1; }
     .ac-header_collapse__phone {
       display: -webkit-box;
       display: -webkit-flex;
@@ -355,7 +380,7 @@ header.sticky {
           white-space: nowrap;
           font-size: 20px;
           line-height: 20px;
-          font-weight: 700; }
+          font-family: "Geometria-700"; }
           .ac-header_collapse__phone-number a:hover {
             text-decoration: none;
             color: #4c69ad; }
@@ -363,7 +388,7 @@ header.sticky {
         margin-top: 10px; }
         .ac-header_collapse__phone .btn-custom-header div {
           position: relative;
-          font-family: 'Open Sans';
+          font-family: "Open Sans";
           font-size: 13px;
           line-height: 13px;
           color: #4c69ad;
@@ -394,7 +419,7 @@ header.sticky {
   background-color: #f3f1ef;
   padding-top: 205px; }
   .bt-main_content h1 {
-    font-weight: 800;
+    font-family: "Geometria-800";
     font-size: 40px;
     line-height: 50px;
     color: #000d2b;
@@ -405,7 +430,7 @@ header.sticky {
     font-size: 16px;
     line-height: 20px;
     font-family: 'Open Sans';
-    font-weight: 300;
+    font-family: "Open Sans-300";
     color: #535353; }
   .bt-main_content__btn {
     display: -webkit-box;
@@ -464,7 +489,7 @@ header.sticky {
         background-size: contain; }
       .bt-main_content__btn-garanty .text {
         margin-left: 15px;
-        font-weight: 500;
+        font-family: "Geometria-500";
         font-size: 18px;
         line-height: 20px;
         color: #fe5a3c; }
@@ -495,7 +520,7 @@ header.sticky {
       .bt-main_content__triger .item h6 {
         position: relative;
         z-index: 2;
-        font-weight: 700;
+        font-family: "Geometria-700";
         font-size: 16px;
         color: #1d4398; }
       .bt-main_content__triger .item .img {
@@ -536,7 +561,7 @@ header.sticky {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
-      font-family: 'Open Sans';
+      font-family: "Open Sans";
       font-size: 18px;
       line-height: 18px;
       color: #2b2a26; }
@@ -613,7 +638,7 @@ header.sticky {
       .screen-two_section-1 .item .number span {
         font-size: 66px;
         line-height: 70px;
-        font-weight: 700;
+        font-family: "Geometria-700";
         color: #a1c9f1; }
     .screen-two_section-1 .item p {
       max-width: 470px;
@@ -668,7 +693,7 @@ header.sticky {
           display: block;
           text-align: center;
           font-size: 16px;
-          font-weight: 500; }
+          font-family: "Geometria-500"; }
         .screen-two_section-2__content .item i {
           position: absolute;
           top: -15px;
@@ -712,7 +737,7 @@ header.sticky {
   .screen-four_content p {
     font-size: 16px;
     line-height: 16px;
-    font-weight: 300;
+    font-family: "Geometria-300";
     margin-bottom: 30px; }
   .screen-four_content_form {
     display: -webkit-box;
@@ -743,7 +768,7 @@ header.sticky {
         max-width: 247px;
         font-size: 12px;
         line-height: 15px;
-        font-weight: 300;
+        font-family: "Geometria-300";
         color: #646464; }
 
 .screen-five h3 {
@@ -819,8 +844,7 @@ header.sticky {
   .screen-five_item__text {
     font-size: 18px;
     line-height: 23px;
-    font-style: italic;
-    font-weight: 400;
+    font-family: "Geometria-Italic";
     margin-left: 25px;
     color: #2b2a26; }
 
@@ -846,7 +870,7 @@ header.sticky {
             align-items: flex-end; }
     .last-screen-duty__item {
       position: relative;
-      font-family: 'Open Sans';
+      font-family: "Open Sans";
       font-size: 20px;
       line-height: 20px;
       color: #2b2a26; }
@@ -885,7 +909,7 @@ header.sticky {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 40px;
-      font-weight: 300;
+      font-family: "Geometria-300";
       font-size: 16px;
       line-height: 17px;
       color: #2b2b2b;
@@ -908,7 +932,7 @@ header.sticky {
       .last-screen-form_content .info {
         font-size: 12px;
         line-height: 13px;
-        font-weight: 300;
+        font-family: "Geometria-300";
         color: #717171; }
     .last-screen-form::after {
       content: '';
@@ -990,7 +1014,7 @@ header.sticky {
     height: 100%;
     margin: 0 auto; }
     .service-modal-container__item h6 {
-      font-weight: 700;
+      font-family: "Geometria-700";
       font-size: 19px;
       line-height: 25px;
       margin-bottom: 20px;
@@ -1002,7 +1026,7 @@ header.sticky {
         top: auto;
         bottom: 20px; }
       .service-modal-container__item form label {
-        font-weight: 300;
+        font-family: "Geometria-300";
         font-size: 15px;
         margin-bottom: 10px;
         color: #94969e; }
@@ -1017,7 +1041,7 @@ header.sticky {
       margin-top: 20px;
       font-size: 11px;
       line-height: 12px;
-      font-weight: 300;
+      font-family: "Geometria-300";
       color: #717171; }
 
 .modal-header {
@@ -1285,7 +1309,7 @@ header.sticky {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
-        font-family: 'Open Sans';
+        font-family: "Open Sans";
         font-size: 20px;
         line-height: 20px;
         text-align: right;
