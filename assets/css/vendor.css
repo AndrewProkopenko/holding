@@ -8967,6 +8967,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Geometria';
   font-style: italic;
   font-weight: 700;
+  font-display: block;
   src: local("Geometria"), url("https://fonts.cdnfonts.com/s/14868/Geometria-BoldItalic.woff") format("woff"); }
 
 @font-face {
