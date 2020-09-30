@@ -561,13 +561,14 @@ header.sticky {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
+      max-width: 200px;
       font-family: "Open Sans";
       font-size: 18px;
       line-height: 18px;
       color: #2b2a26; }
       .bt-main-second_content__items .item i {
         position: absolute;
-        top: 3px;
+        top: 10px;
         width: 10px;
         height: 10px;
         background: #376ce8;
@@ -635,13 +636,17 @@ header.sticky {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center; }
+      .screen-two_section-1 .item .number .img-koshel {
+        width: 100% !important; }
+      .screen-two_section-1 .item .number .img-stamp {
+        width: 85%; }
       .screen-two_section-1 .item .number span {
         font-size: 66px;
         line-height: 70px;
         font-family: "Geometria-700";
         color: #a1c9f1; }
     .screen-two_section-1 .item p {
-      max-width: 470px;
+      max-width: 450px;
       font-size: 18px;
       line-height: 19px;
       margin: 0; }
@@ -1219,30 +1224,33 @@ header.sticky {
         .bt-main-second_content__items .item:nth-child(6) {
           bottom: 30px;
           right: -70px; }
+  .bt-main-second_content__items .item:nth-child(1) {
+    left: -50px; }
   .bt-main-second_content__items .item:nth-child(2) {
-    right: -15px; }
+    right: -37px; }
     .bt-main-second_content__items .item:nth-child(2) i {
       left: -20px; }
   .bt-main-second_content__items .item:nth-child(3) {
-    left: -15px; }
+    left: -28px; }
     .bt-main-second_content__items .item:nth-child(3) i {
       top: -30px;
       right: 29px; }
   .bt-main-second_content__items .item:nth-child(4) {
-    right: -15px; }
+    right: -20px; }
     .bt-main-second_content__items .item:nth-child(4) i {
       top: -30px;
       left: 40px; }
   .bt-main-second_content__items .item:nth-child(5) {
-    left: 15px; }
+    left: 49px; }
     .bt-main-second_content__items .item:nth-child(5) i {
       top: -30px;
       right: 70px; }
   .bt-main-second_content__items .item:nth-child(6) {
-    right: 15px; }
+    bottom: -5px;
+    right: -23px; }
     .bt-main-second_content__items .item:nth-child(6) i {
       top: -30px;
-      left: 70px; }
+      left: 0px; }
   .screen-two {
     position: relative;
     padding-top: 140px;
@@ -1495,6 +1503,7 @@ header.sticky {
       margin-left: auto;
       margin-right: auto; }
       .bt-main-second_content__items .item {
+        max-width: none;
         -webkit-box-pack: end;
         -webkit-justify-content: flex-end;
             -ms-flex-pack: end;
@@ -1656,7 +1665,7 @@ header.sticky {
           margin-bottom: 30px !important;
           margin-right: 0;
           margin-left: 0;
-          padding: 15px;
+          padding: 20px 20px 15px 20px;
           height: auto; }
         .screen-two_section-2__content .item-bg::after {
           width: 100%;
@@ -2025,27 +2034,27 @@ header.sticky {
 @media screen and (min-width: 1200px) {
   .bt-main-second_content__items .item:nth-child(1) {
     top: 110px !important;
-    left: 105px !important; }
+    left: 40px !important; }
   .bt-main-second_content__items .item:nth-child(2) {
     top: 110px !important;
-    right: 60px !important; }
+    right: 40px !important; }
   .bt-main-second_content__items .item:nth-child(3) {
     top: 295px !important;
-    left: 12px !important; }
+    left: -4px !important; }
   .bt-main-second_content__items .item:nth-child(4) {
     top: 295px !important;
-    right: 0px !important; }
+    right: -4px !important; }
   .bt-main-second_content__items .item:nth-child(5) {
     bottom: 30px !important;
-    left: 21px !important; }
+    left: 58px !important; }
   .bt-main-second_content__items .item:nth-child(6) {
     bottom: 30px !important;
-    right: 20px !important; }
+    right: 35px !important; }
   .bt-main-second_content__items .left-item i {
-    top: 3px !important;
+    top: 10px !important;
     right: -35px !important; }
   .bt-main-second_content__items .right-item i {
-    top: 3px !important;
+    top: 10px !important;
     left: -35px !important; }
   .last-screen-duty__item:nth-child(4) {
     width: auto; }
